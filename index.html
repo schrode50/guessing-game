@@ -8,30 +8,30 @@
     <h1>This is my first paragraph</h1>
     <h2>This is my second paragraph</h2>
     <script>
-      var where = prompt('Am I from Seattle');
-      if(where !== 'yes' && where !== 'no') {
+      var where = prompt('Am I from Seattle').toLowerCase();
+      if((where !== 'yes' && where !== 'no') && (where !== 'y' && where !== 'n')) {
         alert("Please enter 'yes' or 'no'");
-      } else if(where === 'yes') {
+      } else if(where === 'yes' || where === 'y') {
         alert("No I'm actually from Oklahoma");
-      } else {
+      } else if(where === 'no' || where === 'n') {
         alert("That's right do I you know you?");
       };
 
-      var car = prompt('Do you drive?');
-      if(where !== 'yes' && where !== 'no') {
+      var car = prompt('Do you drive?').toLowerCase();;
+      if((where !== 'yes' && where !== 'no') && (where !== 'y' && where !== 'n')) {
         alert("Please enter 'yes' or 'no'");
-      } else if(car === 'yes') {
+      } else if(where === 'yes' || where === 'y') {
         alert("I do drive, well done!");
-      } else {
+      } else if(where === 'no' || where === 'n') {
         alert("Actually I like to drive if I can get out of the city!");
       };
 
-      var house = prompt('Do you live in a house?');
-      if(where !== 'yes' && where !== 'no') {
+      var house = prompt('Do you live in a house?').toLowerCase();;
+      if((where !== 'yes' && where !== 'no') && (where !== 'y' && where !== 'n')) {
         alert("Please enter 'yes' or 'no'");
-      } else if(house === 'yes') {
+      } else if(where === 'yes' || where === 'y') {
         alert("Very good");
-      } else {
+      } else if(where === 'no' || where === 'n') {
         alert("I actually do, I share a house with several other people.")
       };
 
